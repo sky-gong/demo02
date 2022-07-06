@@ -1,0 +1,162 @@
+*{
+    margin: 0; /*边距*/
+    padding: 0;
+}
+
+/*整个网页的背景图片*/
+body{
+    /*换背景*/
+    /*background:url("../img/back.jpg") ;*/
+    background-color: white;
+}
+
+/*header设置外边界,留出页面最上面的距离*/
+.header{
+    margin-top: 15px;
+}
+
+
+/*语言部分的样式*/
+
+.language{
+    width: 100%;
+    height:35px;
+    background-color:#101111;
+
+}
+.language>ul{
+    float: right;
+    /*right: 470px;*/
+    margin-right: 210px;
+
+}
+
+/*语言下面的li标签,用来存放语言*/
+.language>ul>li{
+    width: 80px;
+    height: 35px;
+    background-color: crimson;
+    float:left;
+    margin-left: 5px;
+    /*没有标签点*/
+    list-style: none;
+}
+.language>ul>li:nth-of-type(1){
+    background: url("../img/01.gif");
+}
+/*鼠标悬浮改变图片*/
+.language>ul>li:nth-of-type(1):hover{
+    background: url("../img/01b.gif") no-repeat 0px 2px;
+}
+.language>ul>li:nth-of-type(2){
+    background: url("../img/02.gif") no-repeat 0px -4px;
+}
+.language>ul>li:nth-of-type(2):hover{
+    background: url("../img/02b.gif") no-repeat 0px 1px;
+}
+.language>ul>li:nth-of-type(3){
+    /*给标签框的左边加距离*/
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 35px;
+    background-color: cyan;
+}
+
+/*导航条部分*/
+
+.nav{
+    width: 100%;
+    height:70px;
+    background-color: #15294c;
+}
+
+/*清除a标签默认格式
+text-decoration 消除下划线
+
+*/
+a{
+    text-decoration: none;
+}
+
+.nav>ul{
+    margin-left: 100px;
+    height: 70px;
+}
+
+/*导航条*/
+.nav>ul>li{
+    height: 70px;
+    padding: 0px 15px;
+    float: left;
+    list-style: none;
+}
+.nav>ul>li>a{
+    color: aliceblue;
+    line-height: 70px;
+}
+.nav>ul>li:nth-of-type(10){
+    color:pink;
+    margin-left: 20px;
+    line-height: 30px;
+}
+.header>img{
+    float: left;
+}
+.continer{
+    width: 70%;
+    /*height:1700px;*/
+    /*background-color: pink;*/
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.continer>.title{
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    font-weight:700;
+    line-height: 60px;
+    background-color: darksalmon;
+    color:white;
+    padding:0 18px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.continer>ul>li{
+    margin: 5px 0;
+    list-style: none;
+    padding-left: 20px;
+    height: 70px;
+    overflow: hidden;
+    box-sizing: border-box;
+    /*background-color: #59ff00;*/
+    border-bottom: 1px dashed blanchedalmond ;
+}
+
+.continer>ul>li:hover{
+    background-color: #f4f4f4;
+}
+.continer>ul>li>p{
+    margin-top: 13px;
+}
+.continer>ul>li>span{
+    font-size: 12px;
+    color:#999999;
+    /*span很特殊需要设置成行内*/
+    display: inline-block;
+    margin-top: 5px;
+}
+.continer>.bottom{
+    text-align: center;
+    width: 100%;
+    line-height: 55px;
+}
+
+.continer>.bottom>span{
+    font-size: 18px;
+    font-weight: 600;
+}
